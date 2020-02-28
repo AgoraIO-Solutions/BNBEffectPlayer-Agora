@@ -1,0 +1,85 @@
+draw_order = ["retouch", "!glfx_WARP_IMAGE", "face", "sunglasses", "Cut", "PoliceCap"]
+msaa = 1
+warp_mesh = "Face.bsm2"
+shadowmap_size = 512
+
+[materials]
+
+[materials.Cut]
+fs = "cut.frag"
+colorwrite = false
+backfaces = false
+vs = "cut.vert"
+zwrite = true
+shadow = true
+blend = "off"
+
+[materials.Cut.samplers]
+tex_normal = "Cut_Normal.ktx"
+tex_diffuse = "Cut_Base_Color.ktx"
+tex_mrao = "Cut_MRAO.ktx"
+
+[materials.retouch]
+fs = "retouch.frag"
+colorwrite = true
+backfaces = false
+vs = "retouch.vert"
+mouth = true
+zwrite = true
+onface = true
+shadow = false
+blend = "off"
+
+[materials.retouch.samplers]
+tex_normalMakeup = "Beard.png"
+tex_softLight = "soft.png"
+selection_tex = "redmask_new_3.png"
+lookupTexTeeth = "teeth_highlighter5.png"
+
+[materials.sunglasses]
+fs = "sunglasses.frag"
+colorwrite = true
+backfaces = false
+vs = "sunglasses.vert"
+zwrite = true
+shadow = true
+blend = "alpha"
+
+[materials.sunglasses.samplers]
+tex_normal = "sunglasses_Normal.ktx"
+tex_mrao = "sunglasses_MRAO.ktx"
+tex_brdf = "brdf.ktx"
+tex_diffuse = "sunglasses_Base_Color.ktx"
+tex_ibl_diff = "ibl_diff.ktx"
+tex_ibl_spec = "ibl_spec.ktx"
+
+[materials.PoliceCap]
+fs = "policecap.frag"
+colorwrite = true
+backfaces = true
+vs = "policecap.vert"
+zwrite = true
+shadow = true
+blend = "off"
+
+[materials.PoliceCap.samplers]
+tex_normal = "PoliceCap_Normal.ktx"
+tex_mrao = "PoliceCap_MRAO.ktx"
+tex_brdf = "brdf.ktx"
+tex_diffuse = "PoliceCap_Base_Color.ktx"
+tex_ibl_diff = "ibl_diff.ktx"
+tex_ibl_spec = "ibl_spec.ktx"
+
+# PBR
+[materials.face]
+vs = "face.vert"
+fs = "face.frag"
+blend = "off" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = false
+zwrite = true
+shadow = true
+[materials.face.samplers]
+tex_normal = "Cut_Normal.ktx"
+tex_diffuse = "Cut_Base_Color.ktx"
+tex_mrao = "Cut_MRAO.ktx"

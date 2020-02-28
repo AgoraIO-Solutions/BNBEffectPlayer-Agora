@@ -1,0 +1,27 @@
+draw_order = ["retouch", "!glfx_FACE_Z","Spider","!glfx_FACE_SHADOW","Fur"]
+
+[materials.retouch]
+vs = "retouch.vert"
+fs = "retouch.frag"
+blend = "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+onface = true
+mouth = true
+samplers = { selection_tex="redmask_v3.png", lookupTexTeeth="teeth_highlighter5.png", lookupTexEyes="lut_80_percent.png"}
+
+[materials.Spider]
+vs="solid.vert"
+fs="solid.frag"
+samplers = { s_diffuse="TarantulaDiffFur.png", s_normal="TarantulaNM.png" }
+
+[materials.Fur]
+vs="alpha.vert"
+fs="alpha.frag"
+blend="alpha"
+zwrite=false
+backfaces=true
+shadow=false
+samplers = { s_diffuse="TarantulaDiffFur.png" }

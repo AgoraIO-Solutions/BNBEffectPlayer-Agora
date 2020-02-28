@@ -1,0 +1,30 @@
+{
+  "name": "BulldogHarlamov",
+  "frx": {
+    "type": "3d_anim",
+    "3d_anim": {
+      "type": "vfx"
+    },
+    "media": {
+      "type": "VIDEO",
+      "file": "smoke.mp4"
+    }
+  },
+"final" : {
+      "type" : "FILTER",
+
+      "filter" : {
+        "fragmentCode" : "finalColorFilter.fsh",
+        "textures" : [{
+          "file" : "sunny.png",
+          "sampler" : "lookupTexture",
+          "magFilter" : "LINEAR",
+          "minFilter" : "LINEAR"
+      }] 
+   }
+  },
+   "sounds" : [
+                  { "trackName" : "noName.m4a" }
+                  ],
+  "recordDuration": 15
+}

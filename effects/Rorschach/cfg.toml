@@ -1,0 +1,65 @@
+warp_mesh = "morth.bsm2"
+warp_hair = { inner = 100, outer = 200, mid = 0.001, strength = 0.4 }
+msaa = 1
+shadowmap_size = 512
+adjust_znear = 150
+draw_order = ['!glfx_WARP_IMAGE', 'Mask', 'Hat', 'Scarf', 'morth']
+
+# PBR
+[materials.Mask]
+vs = "hair_morph.vert"
+fs = "video.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = true
+samplers = {}
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+
+# PBR
+[materials.Hat]
+vs = "hat.vert"
+fs = "hat.frag"
+blend = "off" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.Hat.samplers]
+tex_diffuse="Hat_Base_Color.ktx"
+tex_normal="Hat_Normal.ktx"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+tex_mrao="Hat_MRAO.ktx"
+
+# PBR
+[materials.Scarf]
+vs = "scarf.vert"
+fs = "scarf.frag"
+blend = "off" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.Scarf.samplers]
+tex_diffuse="Hat_Base_Color.ktx"
+tex_normal="Hat_Normal.ktx"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+tex_mrao="Hat_MRAO.ktx"
+
+# Cut
+[materials.morth]
+vs = "morth.vert"
+fs = "morth.frag"
+blend = "off"
+backfaces = false
+colorwrite = false
+zwrite = true
+shadow = false
+samplers = {}

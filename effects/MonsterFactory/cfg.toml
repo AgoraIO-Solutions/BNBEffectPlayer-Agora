@@ -1,0 +1,80 @@
+warp_mesh = "MonsterFactoryMorph.bsm2"
+msaa = 1
+shadowmap_size = 512
+adjust_znear = 150
+draw_order = ['retouch', '!glfx_WARP_IMAGE', 'MmorfMonsterFactory', 'body', 'MonsterFactory', 'hair']
+
+# Retouch
+[materials.retouch]
+vs = "retouch.vert"
+fs = "retouch.frag"
+blend = "off" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+onface = true
+mouth = true
+[materials.retouch.samplers]
+selection_tex="REDMASK_v3_256.png"
+lookupTexTeeth="TEETH_medium.png"
+lookupTexEyes="EYES_medium.png"
+tex_softLight="SOFT_princess_256.png"
+tex_normalMakeup="sharp_lashes.png"
+tex_highlight="FLARE_41_512.png"
+
+# Cut
+[materials.MmorfMonsterFactory]
+vs = "mmorfmonsterfactory.vert"
+fs = "mmorfmonsterfactory.frag"
+blend = "off"
+backfaces = false
+colorwrite = false
+zwrite = true
+shadow = false
+samplers = {}
+
+# Cut
+[materials.body]
+vs = "body.vert"
+fs = "body.frag"
+blend = "off"
+backfaces = false
+colorwrite = false
+zwrite = true
+shadow = false
+samplers = {}
+
+# PBR
+[materials.MonsterFactory]
+vs = "monsterfactory.vert"
+fs = "monsterfactory.frag"
+blend = "off" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.MonsterFactory.samplers]
+tex_diffuse="MonsterFactory_Base_Color.ktx"
+tex_normal="MonsterFactory_Normal.ktx"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+tex_mrao="MonsterFactory_MRAO.ktx"
+
+# PBR
+[materials.hair]
+vs = "hair.vert"
+fs = "hair.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.hair.samplers]
+tex_diffuse="hair_Base_Color.ktx"
+tex_normal="hair_Normal.ktx"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+tex_mrao="hair_MRAO.ktx"

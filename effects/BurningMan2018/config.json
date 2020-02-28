@@ -1,0 +1,27 @@
+{
+  "name": "BurningMan2018",
+  "frx": {
+    "type": "3d_anim",
+    "3d_anim": {
+      "type": "vfx"
+    }
+  },
+
+  "final" : {
+      "type" : "FILTER",
+
+      "filter" : {
+        "fragmentCode" : "finalColorFilter.fsh",
+        "textures" : [{
+          "file" : "pirate.png",
+          "sampler" : "lookupTexture",
+          "magFilter" : "LINEAR",
+          "minFilter" : "LINEAR"
+        }] 
+      }
+  },
+  "sounds" : [
+                  { "trackName" : "music_L_Ch_76.ogg" }
+                  ],
+  "recordDuration": 15
+}

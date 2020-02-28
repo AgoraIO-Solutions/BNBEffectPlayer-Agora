@@ -1,0 +1,508 @@
+{
+  "layer_shapes" : {
+    "max_pooling2d_29_output" : {
+      "k" : 4,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "output4" : {
+      "k" : 2,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "BN_down_0_1_output" : {
+      "k" : 4,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "BN_down_4_1_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_down3_s1_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_down_s4_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_downs_4_1_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_downs_1_2_output" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "BN_down_3_3_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "max_pooling2d_33_output" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "reshape_14_output" : {
+      "k" : 1024,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "prelu_down2_s2_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down3_s2_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "dense64_s_1_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "BN_down_s2_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down_2_2_output" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "prelu_downs_2_1_output" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "max_pooling2d_32_output" : {
+      "k" : 32,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_down3_s3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down2_s1_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down_1_1_output" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "BN_down2_s4_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_downs_0_1_output" : {
+      "k" : 4,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "max_pooling2d_31_output" : {
+      "k" : 16,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "prelu_down2_s4_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down_0_3_output" : {
+      "k" : 4,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "prelu_downs_3_3_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "BN_down_4_3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "reshape_15_output" : {
+      "k" : 1024,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "concatenate_5_output" : {
+      "k" : 3072,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "flatten3_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "BN_down_s3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "input1" : {
+      "k" : 3,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "max_pooling2d_30_output" : {
+      "k" : 8,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "BN_down_3_2_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "detector_flat_output" : {
+      "k" : 16,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "prelu_downs_4_2_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_downs_1_3_output" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "BN_down3_s1_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_down_s1_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down3_s4_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_dense1_1_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "prelu_dense2_1_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "prelu_dense3_1_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "flatten1_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "BN_down_2_1_output" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "prelu_down2_s1_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "dense64_s2_1_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "prelu_downs_2_2_output" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "BN_down_1_3_output" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "BN_down2_s3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_down3_s2_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down_s4_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_downs_3_1_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "prelu_down_s2_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_downs_0_2_output" : {
+      "k" : 4,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "BN_down_0_2_output" : {
+      "k" : 4,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "BN_down_4_2_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_down2_s3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "detector_conv1_output" : {
+      "k" : 16,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "dense64_s3_1_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "prelu_downs_1_1_output" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "BN_down_3_1_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "prelu_downs_4_3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down3_s3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "prelu_down3_s4_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down_2_3_output" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "prelu_down_s3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "max_pooling2d_35_output" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "reshape_13_output" : {
+      "k" : 1024,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "roll_output" : {
+      "k" : 12,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "detector_output" : {
+      "k" : 2,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "prelu_downs_2_3_output" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "detector_prelu1_output" : {
+      "k" : 16,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "BN_down_s1_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "BN_down_1_2_output" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "BN_down2_s2_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "flatten2_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "output1" : {
+      "k" : 2,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "max_pooling2d_34_output" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "output2" : {
+      "k" : 12,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "output3" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "prelu_downs_3_2_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "prelu_downs_0_3_output" : {
+      "k" : 4,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    }
+  }
+}

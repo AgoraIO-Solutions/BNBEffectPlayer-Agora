@@ -1,0 +1,13 @@
+shadowmap_size = 512
+
+draw_order = ["QuadMat"]
+
+[materials.QuadMat]
+vs = "button.vert"
+fs = "tex.frag"
+blend = "alpha"
+backfaces = true
+colorwrite = true
+zwrite = false
+shadow = false
+samplers = { tex=0 }

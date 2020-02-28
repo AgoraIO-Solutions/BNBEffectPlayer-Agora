@@ -1,0 +1,131 @@
+msaa = 1
+shadowmap_size = 512
+adjust_znear = 150
+draw_order = ['facemat', 'cut', 'mesh_physics', 'dogFace', 'mesh', 'snap', 'glass', 'bilbord']
+
+# Retouch
+[materials.facemat]
+vs = "facemat.vert"
+fs = "retouch.frag"
+blend = "off" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = false
+shadow = false
+[materials.facemat.samplers]
+selection_tex="redmask.png"
+lookupTexEyes="lut_80_percent.png"
+tex_softLight="soft_princess.png"
+tex_normalMakeup="facemat_BaseColor.png"
+
+# Cut
+[materials.cut]
+vs = "cut.vert"
+fs = "cut.frag"
+blend = "off"
+backfaces = false
+colorwrite = false
+zwrite = true
+shadow = false
+samplers = {}
+
+# PBR
+[materials.mesh_physics]
+vs = "mesh_physics.vert"
+fs = "mesh_physics.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.mesh_physics.samplers]
+tex_diffuse="mesh_BaseColor.png"
+tex_normal="mesh_Normal.png"
+tex_metallic="mesh_Metallic.png"
+tex_roughness="mesh_Roughness.png"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+
+# PBR
+[materials.dogFace]
+vs = "dogface.vert"
+fs = "dogface.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.dogFace.samplers]
+tex_diffuse="dogFace_BaseColor.png"
+tex_normal="dogFace_Normal.png"
+tex_metallic="dogFace_Metallic.png"
+tex_roughness="dogFace_Roughness.png"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+
+# PBR
+[materials.glass]
+vs = "glass.vert"
+fs = "glass.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.glass.samplers]
+tex_diffuse="glass_BaseColor.png"
+tex_normal="glass_Normal.png"
+tex_metallic="glass_Metallic.png"
+tex_roughness="glass_Roughness.png"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+
+# PBR
+[materials.mesh]
+vs = "mesh.vert"
+fs = "mesh.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.mesh.samplers]
+tex_diffuse="mesh_BaseColor.png"
+tex_normal="mesh_Normal.png"
+tex_metallic="mesh_Metallic.png"
+tex_roughness="mesh_Roughness.png"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+
+# PBR
+[materials.snap]
+vs = "snap.vert"
+fs = "snap.frag"
+blend = "off" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = true
+[materials.snap.samplers]
+tex_diffuse="mesh_BaseColor.png"
+tex_normal="mesh_Normal.png"
+tex_metallic="mesh_Metallic.png"
+tex_roughness="mesh_Roughness.png"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+
+# bilbord
+[materials.bilbord]
+vs = "smoke.vert"
+fs = "video_a.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = false
+shadow = true
+[materials.bilbord.samplers]

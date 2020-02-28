@@ -1,0 +1,42 @@
+{
+  "name": "CubemapEverest",
+  "frx": {
+    "type": "3d_anim",
+    "3d_anim": {
+      "type": "vfx"
+    }
+  },
+ "foreground" : {
+   "type" : "MEDIA",
+   "showWithFaceOnly": "false",
+   "media" : {
+     "type" : "VIDEO",
+     "file" : "snow.mp4",
+     "videoSpeed" : 1.0,
+     "blend" : "NORMAL",
+     "mode" : "RGBA"
+   }
+ },
+ "final" : {
+      "type" : "FILTER",
+
+      "filter" : {
+        "fragmentCode" : "finalColorFilter.fsh",
+        "textures" : [{
+          "file" : "heart.png",
+          "sampler" : "lookupTexture",
+          "magFilter" : "LINEAR",
+          "minFilter" : "LINEAR"
+        }]
+      }
+
+    },
+  "sounds": [{
+      "trackName": "Cubemap_Everest_L_Channel.ogg"
+  }],
+  "recordDuration": 15,
+  "rotation_vector": true,
+  "recognizer" : [
+    "background"
+  ]
+}

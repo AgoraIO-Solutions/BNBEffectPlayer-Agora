@@ -1,0 +1,370 @@
+{
+  "layer_shapes" : {
+    "d_cnv_2_conv_n_n_bn_17_output" : {
+      "k" : 48,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "btl_conv_6_conv_n_n_bn_49_output" : {
+      "k" : 4,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "d_cnv_3_conv_depth_wise_2d_prelu_25_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "btl_conv_6_conv_n_n_prelu_53_output" : {
+      "k" : 8,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "u_conv_5_conv_1_1_prelu_103_output" : {
+      "k" : 8,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "d_cnv_4_conv_n_n_prelu_37_output" : {
+      "k" : 48,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "u_conv_2_conv_n_n_bn_78_output" : {
+      "k" : 24,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "d_cnv_4_conv_n_n_bn_37_output" : {
+      "k" : 48,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "u_smpl_5_upsample_upsample_101_output" : {
+      "k" : 4,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "d_cnv_1_conv_depth_wise_2d_bn_11_output" : {
+      "k" : 24,
+      "w" : 36,
+      "n" : 1,
+      "h" : 64
+    },
+    "d_smpl_0_avg_pooling_avg_pool_8_output" : {
+      "k" : 24,
+      "w" : 36,
+      "n" : 1,
+      "h" : 64
+    },
+    "btl_conv_6_conv_n_n_prelu_49_output" : {
+      "k" : 4,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "u_conv_1_conv_n_n_bn_67_output" : {
+      "k" : 24,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "d_cnv_4_conv_n_n_prelu_37_add_chan_adj_75_output" : {
+      "k" : 24,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "u_smpl_4_upsample_upsample_92_output" : {
+      "k" : 48,
+      "w" : 36,
+      "n" : 1,
+      "h" : 64
+    },
+    "d_cnv_3_conv_depth_wise_2d_bn_25_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "u_conv_5_conv_1_1_bn_103_output" : {
+      "k" : 8,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "d_smpl_1_max_pooling_max_pool_16_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_mrgcnv_3_0_concat_merge_concat_26_output" : {
+      "k" : 48,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "u_mrg_cnv_3_0_concat_merge_concat_88_output" : {
+      "k" : 48,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "u_mrg_cnv_5_0_concat_merge_concat_104_output" : {
+      "k" : 12,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "d_mrgcnv_4_0_add_merge_add_38_output" : {
+      "k" : 48,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "u_conv_4_conv_n_n_bn_98_output" : {
+      "k" : 4,
+      "w" : 36,
+      "n" : 1,
+      "h" : 64
+    },
+    "u_mrg_cnv_2_0_concat_merge_concat_77_output" : {
+      "k" : 72,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "u_conv_2_conv_n_n_prelu_78_output" : {
+      "k" : 24,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "d_frmrg_2_add_merge_add_23_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "u_frmrg_5_concat_merge_concat_109_output" : {
+      "k" : 16,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "u_conv_1_conv_n_n_prelu_67_output" : {
+      "k" : 24,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "input1" : {
+      "k" : 4,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "u_conv_4_conv_n_n_prelu_98_output" : {
+      "k" : 4,
+      "w" : 36,
+      "n" : 1,
+      "h" : 64
+    },
+    "d_cnv_0_conv_1_1_prelu_1_output" : {
+      "k" : 24,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "u_conv_2_conv_n_n_prelu_76_output" : {
+      "k" : 48,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "d_smpl_4_conv_n_n_down_bn_40_output" : {
+      "k" : 16,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "cropping2d_2_output" : {
+      "k" : 24,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "d_mrgcnv_2_0_concat_merge_concat_18_add_chan_adj_23_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_cnv_2_conv_n_n_prelu_17_output" : {
+      "k" : 48,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_cnv_5_conv_depth_wise_2d_prelu_45_output" : {
+      "k" : 16,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "u_smpl_3_upsample_upsample_83_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "u_conv_3_conv_depth_wise_2d_bn_87_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_cnv_0_conv_1_1_bn_1_output" : {
+      "k" : 24,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "d_cnv_3_conv_depth_wise_2d_prelu_29_output" : {
+      "k" : 48,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_smpl_3_max_pooling_max_pool_32_add_chan_adj_38_output" : {
+      "k" : 48,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "u_mrg_cnv_5_0_concat_merge_concat_104_output__tmp__identity__" : {
+      "k" : 12,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "u_conv_2_conv_n_n_bn_76_output" : {
+      "k" : 48,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "u_brmrg_3_add_merge_add_84_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_cnv_5_conv_depth_wise_2d_bn_45_output" : {
+      "k" : 16,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "u_brmrg_2_add_merge_add_75_output" : {
+      "k" : 24,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "d_cnv_5_conv_depth_wise_2d_prelu_45_add_chan_adj_55_output" : {
+      "k" : 8,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "d_mrgcnv_3_0_concat_merge_concat_26_output__tmp__identity__" : {
+      "k" : 48,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "btl_frmrg_6_add_merge_add_55_output" : {
+      "k" : 8,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "btl_conv_6_conv_n_n_bn_53_output" : {
+      "k" : 8,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "u_smpl_2_upsample_upsample_74_output" : {
+      "k" : 24,
+      "w" : 10,
+      "n" : 1,
+      "h" : 16
+    },
+    "u_conv_3_conv_depth_wise_2d_prelu_87_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_cnv_3_conv_depth_wise_2d_bn_29_output" : {
+      "k" : 48,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_smpl_3_max_pooling_max_pool_32_output" : {
+      "k" : 96,
+      "w" : 9,
+      "n" : 1,
+      "h" : 16
+    },
+    "d_mrgcnv_2_0_concat_merge_concat_18_add_chan_adj_84_output" : {
+      "k" : 24,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_mrgcnv_2_0_concat_merge_concat_18_output" : {
+      "k" : 72,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_mrgcnv_3_0_concat_merge_concat_30_output" : {
+      "k" : 96,
+      "w" : 18,
+      "n" : 1,
+      "h" : 32
+    },
+    "d_smpl_4_conv_n_n_down_prelu_40_output" : {
+      "k" : 16,
+      "w" : 5,
+      "n" : 1,
+      "h" : 8
+    },
+    "output1" : {
+      "k" : 2,
+      "w" : 72,
+      "n" : 1,
+      "h" : 128
+    },
+    "d_cnv_1_conv_depth_wise_2d_prelu_11_output" : {
+      "k" : 24,
+      "w" : 36,
+      "n" : 1,
+      "h" : 64
+    }
+  }
+}

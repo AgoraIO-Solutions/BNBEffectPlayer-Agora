@@ -1,0 +1,737 @@
+{
+  "storage" : "model.espresso.weights",
+  "properties" : {
+
+  },
+  "format_version" : 200,
+  "layers" : [
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_batch_0_output",
+      "K" : 4,
+      "blob_biases" : 1,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-donw_conv_0",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "input1",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 3
+    },
+    {
+      "mode" : 0,
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_relu_0_output",
+      "type" : "activation",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-down_relu_0",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_batch_0_output"
+    },
+    {
+      "pad_value" : 0,
+      "average_count_exclude_padding" : 1,
+      "top_shape_style" : 0,
+      "avg_or_max" : 1,
+      "stride_x" : 2,
+      "pad_mode" : 2,
+      "stride_y" : 2,
+      "pad_t" : 0,
+      "weights" : {
+
+      },
+      "size_y" : 2,
+      "type" : "pool",
+      "pad_r" : 0,
+      "pad_b" : 0,
+      "size_x" : 2,
+      "pad_fill_mode" : 0,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_relu_0_output",
+      "pad_l" : 0,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-pool_0",
+      "top" : "YCbCrA_IRI_UNET_relu_activation-pool_0_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_batch_1_output",
+      "K" : 8,
+      "blob_biases" : 5,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-donw_conv_1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-pool_0_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 7
+    },
+    {
+      "mode" : 0,
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_relu_1_output",
+      "type" : "activation",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-down_relu_1",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_batch_1_output"
+    },
+    {
+      "pad_value" : 0,
+      "average_count_exclude_padding" : 1,
+      "top_shape_style" : 0,
+      "avg_or_max" : 1,
+      "stride_x" : 2,
+      "pad_mode" : 2,
+      "stride_y" : 2,
+      "pad_t" : 0,
+      "weights" : {
+
+      },
+      "size_y" : 2,
+      "type" : "pool",
+      "pad_r" : 0,
+      "pad_b" : 0,
+      "size_x" : 2,
+      "pad_fill_mode" : 0,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_relu_1_output",
+      "pad_l" : 0,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-pool_1",
+      "top" : "YCbCrA_IRI_UNET_relu_activation-pool_1_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_batch_2_output",
+      "K" : 16,
+      "blob_biases" : 9,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-donw_conv_2",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-pool_1_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 11
+    },
+    {
+      "mode" : 0,
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_relu_2_output",
+      "type" : "activation",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-down_relu_2",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_batch_2_output"
+    },
+    {
+      "pad_value" : 0,
+      "average_count_exclude_padding" : 1,
+      "top_shape_style" : 0,
+      "avg_or_max" : 1,
+      "stride_x" : 2,
+      "pad_mode" : 2,
+      "stride_y" : 2,
+      "pad_t" : 0,
+      "weights" : {
+
+      },
+      "size_y" : 2,
+      "type" : "pool",
+      "pad_r" : 0,
+      "pad_b" : 0,
+      "size_x" : 2,
+      "pad_fill_mode" : 0,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_relu_2_output",
+      "pad_l" : 0,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-pool_2",
+      "top" : "YCbCrA_IRI_UNET_relu_activation-pool_2_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_batch_3_output",
+      "K" : 32,
+      "blob_biases" : 13,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-donw_conv_3",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 48,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-pool_2_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 15
+    },
+    {
+      "mode" : 0,
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_relu_3_output",
+      "type" : "activation",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-down_relu_3",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_batch_3_output"
+    },
+    {
+      "pad_value" : 0,
+      "average_count_exclude_padding" : 1,
+      "top_shape_style" : 0,
+      "avg_or_max" : 1,
+      "stride_x" : 2,
+      "pad_mode" : 2,
+      "stride_y" : 2,
+      "pad_t" : 0,
+      "weights" : {
+
+      },
+      "size_y" : 2,
+      "type" : "pool",
+      "pad_r" : 0,
+      "pad_b" : 0,
+      "size_x" : 2,
+      "pad_fill_mode" : 0,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_relu_3_output",
+      "pad_l" : 0,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-pool_3",
+      "top" : "YCbCrA_IRI_UNET_relu_activation-pool_3_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_batch_4_output",
+      "K" : 48,
+      "blob_biases" : 17,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-donw_conv_4",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-pool_3_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 19
+    },
+    {
+      "mode" : 0,
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_relu_4_output",
+      "type" : "activation",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-down_relu_4",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_batch_4_output"
+    },
+    {
+      "pad_value" : 0,
+      "average_count_exclude_padding" : 1,
+      "top_shape_style" : 0,
+      "avg_or_max" : 1,
+      "stride_x" : 2,
+      "pad_mode" : 2,
+      "stride_y" : 2,
+      "pad_t" : 0,
+      "weights" : {
+
+      },
+      "size_y" : 2,
+      "type" : "pool",
+      "pad_r" : 0,
+      "pad_b" : 0,
+      "size_x" : 2,
+      "pad_fill_mode" : 0,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_relu_4_output",
+      "pad_l" : 0,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-pool_4",
+      "top" : "YCbCrA_IRI_UNET_relu_activation-pool_4_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_batch_5_output",
+      "K" : 64,
+      "blob_biases" : 21,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-donw_conv_5",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 96,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-pool_4_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 23
+    },
+    {
+      "mode" : 0,
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-down_relu_5_output",
+      "type" : "activation",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-down_relu_5",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_batch_5_output"
+    },
+    {
+      "pad_value" : 0,
+      "average_count_exclude_padding" : 1,
+      "top_shape_style" : 0,
+      "avg_or_max" : 1,
+      "stride_x" : 2,
+      "pad_mode" : 2,
+      "stride_y" : 2,
+      "pad_t" : 0,
+      "weights" : {
+
+      },
+      "size_y" : 2,
+      "type" : "pool",
+      "pad_r" : 0,
+      "pad_b" : 0,
+      "size_x" : 2,
+      "pad_fill_mode" : 0,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-down_relu_5_output",
+      "pad_l" : 0,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-pool_5",
+      "top" : "YCbCrA_IRI_UNET_relu_activation-pool_5_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-mid_relu__output",
+      "K" : 96,
+      "blob_biases" : 25,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-mid_conv_",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-pool_5_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 27
+    },
+    {
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-mid_relu__output",
+      "scaling_factor_y" : 2,
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-mid_upsampling__output",
+      "scaling_factor_x" : 2,
+      "type" : "upsample",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-mid_upsampling_"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-up_relu_5_output",
+      "K" : 128,
+      "blob_biases" : 29,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-up_conv_5",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 96,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-mid_upsampling__output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 31
+    },
+    {
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-up_relu_5_output",
+      "scaling_factor_y" : 2,
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-upsampling_5_output",
+      "scaling_factor_x" : 2,
+      "type" : "upsample",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-upsampling_5"
+    },
+    {
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-concatenate_5_output",
+      "type" : "concat",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-concatenate_5",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-upsampling_5_output,YCbCrA_IRI_UNET_relu_activation-down_batch_5_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-up_relu_4_output",
+      "K" : 192,
+      "blob_biases" : 33,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-up_conv_4",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-concatenate_5_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 35
+    },
+    {
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-up_relu_4_output",
+      "scaling_factor_y" : 2,
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-upsampling_4_output",
+      "scaling_factor_x" : 2,
+      "type" : "upsample",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-upsampling_4"
+    },
+    {
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-concatenate_4_output",
+      "type" : "concat",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-concatenate_4",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-upsampling_4_output,YCbCrA_IRI_UNET_relu_activation-down_batch_4_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-up_relu_3_output",
+      "K" : 128,
+      "blob_biases" : 37,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-up_conv_3",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 48,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-concatenate_4_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 39
+    },
+    {
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-up_relu_3_output",
+      "scaling_factor_y" : 2,
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-upsampling_3_output",
+      "scaling_factor_x" : 2,
+      "type" : "upsample",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-upsampling_3"
+    },
+    {
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-concatenate_3_output",
+      "type" : "concat",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-concatenate_3",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-upsampling_3_output,YCbCrA_IRI_UNET_relu_activation-down_batch_3_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-up_relu_2_output",
+      "K" : 96,
+      "blob_biases" : 41,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-up_conv_2",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-concatenate_3_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 43
+    },
+    {
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-up_relu_2_output",
+      "scaling_factor_y" : 2,
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-upsampling_2_output",
+      "scaling_factor_x" : 2,
+      "type" : "upsample",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-upsampling_2"
+    },
+    {
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-concatenate_2_output",
+      "type" : "concat",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-concatenate_2",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-upsampling_2_output,YCbCrA_IRI_UNET_relu_activation-down_batch_2_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-up_relu_1_output",
+      "K" : 64,
+      "blob_biases" : 45,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-up_conv_1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-concatenate_2_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 47
+    },
+    {
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-up_relu_1_output",
+      "scaling_factor_y" : 2,
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-upsampling_1_output",
+      "scaling_factor_x" : 2,
+      "type" : "upsample",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-upsampling_1"
+    },
+    {
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-concatenate_1_output",
+      "type" : "concat",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-concatenate_1",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-upsampling_1_output,YCbCrA_IRI_UNET_relu_activation-down_batch_1_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-up_relu_0_output",
+      "K" : 32,
+      "blob_biases" : 49,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-up_conv_0",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-concatenate_1_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 51
+    },
+    {
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-up_relu_0_output",
+      "scaling_factor_y" : 2,
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "top" : "YCbCrA_IRI_UNET_relu_activation-upsampling_0_output",
+      "scaling_factor_x" : 2,
+      "type" : "upsample",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-upsampling_0"
+    },
+    {
+      "weights" : {
+
+      },
+      "top" : "YCbCrA_IRI_UNET_relu_activation-concatenate_0_output",
+      "type" : "concat",
+      "name" : "YCbCrA_IRI_UNET_relu_activation-concatenate_0",
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-upsampling_0_output,YCbCrA_IRI_UNET_relu_activation-down_batch_0_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "output1",
+      "K" : 16,
+      "blob_biases" : 53,
+      "name" : "YCbCrA_IRI_UNET_relu_activation-out_convolution",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 2,
+      "bottom" : "YCbCrA_IRI_UNET_relu_activation-concatenate_0_output",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 55
+    }
+  ]
+}

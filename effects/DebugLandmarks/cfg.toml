@@ -1,0 +1,4 @@
+debug_draw_frx = false
+debug_draw_landmarks = true
+draw_order = []
+materials = {}

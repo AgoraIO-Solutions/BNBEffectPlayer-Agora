@@ -1,0 +1,22 @@
+{
+  "name": "PoliceMan",
+  "frx": {
+    "type": "3d_anim",
+    "3d_anim": {
+      "type": "vfx"
+    }
+  },
+  "voiceChanger": {
+    "audioFilters": [{
+      "pitch": {
+        "pitchShift": -192
+      }
+    }]
+  },
+  "sounds": [{
+    "type": "background",
+    "trackName": "Policeman_sndfnt.ogg",
+    "volume": 0.04
+  }],
+  "recordDuration": 10
+}

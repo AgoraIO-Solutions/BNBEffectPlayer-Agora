@@ -1,0 +1,111 @@
+warp_mesh = "morph.bsm2"
+light_streaks = true
+msaa = 1
+shadowmap_size = 512
+adjust_znear = 150
+draw_order = ['retouch', '!glfx_WARP_IMAGE', 'morph_mat', 'matte_mat', 'Shadow_mat', 'lens_mat', 'hat_mat', 'glasses_mat']
+
+# Retouch
+[materials.retouch]
+vs = "retouch.vert"
+fs = "retouch.frag"
+blend = "off" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+onface = true
+mouth = true
+[materials.retouch.samplers]
+selection_tex="REDMASK_v3_256.png"
+lookupTexTeeth="teeth_middle.png"
+lookupTexEyes="eyes_middle.png"
+tex_softLight="soft_low.png"
+tex_normalMakeup="unisex_minimal.png"
+tex_highlight="eye_highlight.png"
+
+# Cut
+[materials.morph_mat]
+vs = "morph_mat.vert"
+fs = "morph_mat.frag"
+blend = "off"
+backfaces = false
+colorwrite = false
+zwrite = true
+shadow = false
+samplers = {}
+
+# Cut
+[materials.matte_mat]
+vs = "matte_mat.vert"
+fs = "matte_mat.frag"
+blend = "off"
+backfaces = false
+colorwrite = false
+zwrite = true
+shadow = false
+samplers = {}
+
+# PBR
+[materials.Shadow_mat]
+vs = "shadow_mat.vert"
+fs = "shadow_mat.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = true
+[materials.Shadow_mat.samplers]
+tex_diffuse="hat_mat_Base_Color.ktx"
+
+# PBR
+[materials.lens_mat]
+vs = "lens_mat.vert"
+fs = "pbr_hdr_reflect.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = true
+[materials.lens_mat.samplers]
+tex_diffuse="glasses_mat_Base_Color.ktx"
+tex_normal="glasses_mat_Normal.ktx"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+tex_mrao="glasses_mat_MRAO.ktx"
+tex_refl = "reflection.png"
+
+# PBR
+[materials.hat_mat]
+vs = "hat_mat.vert"
+fs = "hat_mat.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = true
+[materials.hat_mat.samplers]
+tex_diffuse="hat_mat_Base_Color.ktx"
+tex_normal="hat_mat_Normal.ktx"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+tex_mrao="hat_mat_MRAO.ktx"
+
+# PBR
+[materials.glasses_mat]
+vs = "glasses_mat.vert"
+fs = "glasses_mat.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = true
+[materials.glasses_mat.samplers]
+tex_diffuse="glasses_mat_Base_Color.ktx"
+tex_normal="glasses_mat_Normal.ktx"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+tex_mrao="glasses_mat_MRAO.ktx"
