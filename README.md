@@ -10,7 +10,7 @@ This iOS app shows how the Banuba SDK can be integrated with the Agora SDK to ha
 ## Add the Agora Video SDK to the project
 
 1. Download the [Agora Video SDK](https://www.agora.io/en/download/). Unzip the downloaded SDK package and copy the following file from the SDK `libs` folder into the sample application `BNBEffectPlayer-Agora/src/BanubaSDKApp/libs` folder:
-    - `AograRtcEngineKit.framework`
+    - `AgoraRtcEngineKit.framework`
 
 ## Build steps for iOS
 ----------------------
