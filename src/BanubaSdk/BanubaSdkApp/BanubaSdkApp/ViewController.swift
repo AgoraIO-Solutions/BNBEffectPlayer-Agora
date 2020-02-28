@@ -81,7 +81,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // Agora related code
         initializeAgoraEngine()
         setupVideo()
-        joinChannel()
         
         sdkManager.outputService?.startForwardingFrames(handler: { (pixelBuffer) -> Void in
             self.pushPixelBufferIntoAgoraKit(pixelBuffer: pixelBuffer)
@@ -245,7 +244,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBAction func toggleConnect(_ sender: UIButton) {
         sender.isSelected.toggle()
-        if !sender.isSelected {
+        if sender.isSelected {
             joinChannel()
         } else {
             leaveChannel()

@@ -221,8 +221,8 @@ mode</string>
                                     <constraint firstAttribute="width" constant="70" id="FBm-4N-UmE"/>
                                     <constraint firstAttribute="height" constant="70" id="jDw-xV-gPb"/>
                                 </constraints>
-                                <state key="normal" title="Hang Up" image="end"/>
-                                <state key="selected" image="call"/>
+                                <state key="normal" title="Hang Up" image="call"/>
+                                <state key="selected" image="end"/>
                                 <connections>
                                     <action selector="toggleConnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s7p-bc-Od6"/>
                                 </connections>
@@ -250,7 +250,7 @@ mode</string>
                                     <action selector="toggleVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwP-Cj-NlH"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDa-bN-JHd" userLabel="remoteAgoraView">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDa-bN-JHd" userLabel="remoteAgoraView">
                                 <rect key="frame" x="20" y="98" width="123" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
