@@ -14,7 +14,7 @@
 		13AB457421E75C2C00F9C10E /* BNBPixelFormat+CVPixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB457321E75C2C00F9C10E /* BNBPixelFormat+CVPixelFormat.swift */; };
 		13E3A61A21E78FEA006A91A3 /* BNBTouch+UITouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E3A61921E78FEA006A91A3 /* BNBTouch+UITouch.swift */; };
 		13E3A61C21E79678006A91A3 /* UITouch+id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E3A61B21E79678006A91A3 /* UITouch+id.swift */; };
-		1D51374524097F1E00ED5166 /* BanubaSdk.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57AB757820FF4A240013C11F /* BanubaSdk.framework */; };
+		1DF027EF240DC1D600A8DA85 /* BanubaEffectPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF027EE240DC1D600A8DA85 /* BanubaEffectPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5726E63921B675BC00153BD4 /* VoiceChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5726E63821B675BC00153BD4 /* VoiceChanger.swift */; };
 		57AB757D20FF4A240013C11F /* BanubaSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 57AB757B20FF4A240013C11F /* BanubaSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57AB75E720FF8C820013C11F /* DisplayLinkRunLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AB75DC20FF8C820013C11F /* DisplayLinkRunLoop.swift */; };
@@ -27,27 +27,16 @@
 		57F7F0042100CA1400FCCDCF /* InputService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7F0032100CA1400FCCDCF /* InputService.swift */; };
 		805CB05E21BFFDEF0065BA68 /* UIImage+RawDataCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CB05D21BFFDEF0065BA68 /* UIImage+RawDataCreation.swift */; };
 		FA84E85923967214002DF83D /* BanubaEffectPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA84E85823967214002DF83D /* BanubaEffectPlayer.framework */; };
-		FA84E85A23967215002DF83D /* BanubaEffectPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA84E85823967214002DF83D /* BanubaEffectPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1D51373924096EC800ED5166 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(PROJECT_DIR)/../BanubaSdkApp/libs";
-			dstSubfolderSpec = 0;
-			files = (
-				1D51374524097F1E00ED5166 /* BanubaSdk.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FA84E85B23967215002DF83D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FA84E85A23967215002DF83D /* BanubaEffectPlayer.framework in Embed Frameworks */,
+				1DF027EF240DC1D600A8DA85 /* BanubaEffectPlayer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +51,7 @@
 		13AB457321E75C2C00F9C10E /* BNBPixelFormat+CVPixelFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BNBPixelFormat+CVPixelFormat.swift"; sourceTree = "<group>"; };
 		13E3A61921E78FEA006A91A3 /* BNBTouch+UITouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BNBTouch+UITouch.swift"; sourceTree = "<group>"; };
 		13E3A61B21E79678006A91A3 /* UITouch+id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITouch+id.swift"; sourceTree = "<group>"; };
+		1DF027EE240DC1D600A8DA85 /* BanubaEffectPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BanubaEffectPlayer.framework; path = ../BanubaSdkApp/libs/BanubaEffectPlayer.framework; sourceTree = "<group>"; };
 		5726E63821B675BC00153BD4 /* VoiceChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChanger.swift; sourceTree = "<group>"; };
 		57AB757820FF4A240013C11F /* BanubaSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BanubaSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AB757B20FF4A240013C11F /* BanubaSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BanubaSdk.h; sourceTree = "<group>"; };
@@ -75,7 +65,6 @@
 		57F7EFD62100C4AC00FCCDCF /* SBVideoWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBVideoWriter.m; sourceTree = "<group>"; };
 		57F7F0032100CA1400FCCDCF /* InputService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputService.swift; sourceTree = "<group>"; };
 		805CB05D21BFFDEF0065BA68 /* UIImage+RawDataCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RawDataCreation.swift"; sourceTree = "<group>"; };
-		E4E3CA452255016C00907792 /* BanubaEffectPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BanubaEffectPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA84E85823967214002DF83D /* BanubaEffectPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BanubaEffectPlayer.framework; path = ../BanubaSdkApp/BanubaEffectPlayer.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +99,7 @@
 		57AB756E20FF4A240013C11F = {
 			isa = PBXGroup;
 			children = (
+				1DF027EE240DC1D600A8DA85 /* BanubaEffectPlayer.framework */,
 				57AB757A20FF4A240013C11F /* BanubaSdk */,
 				57AB757920FF4A240013C11F /* Products */,
 				E4E3CA442255016C00907792 /* Frameworks */,
@@ -202,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				FA84E85823967214002DF83D /* BanubaEffectPlayer.framework */,
-				E4E3CA452255016C00907792 /* BanubaEffectPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,7 +220,6 @@
 				57AB757520FF4A240013C11F /* Headers */,
 				57AB757620FF4A240013C11F /* Resources */,
 				FA84E85B23967215002DF83D /* Embed Frameworks */,
-				1D51373924096EC800ED5166 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -450,7 +438,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../../build\"/**",
-					"$(PROJECT_DIR)App",
+					"$(PROJECT_DIR)App/libs",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/BanubaSdk/Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
@@ -490,7 +478,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../../build\"/**",
-					"$(PROJECT_DIR)App",
+					"$(PROJECT_DIR)App/libs",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/BanubaSdk/Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
