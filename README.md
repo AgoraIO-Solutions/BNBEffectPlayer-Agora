@@ -14,7 +14,7 @@ This iOS app shows how the Banuba SDK can be integrated with the Agora SDK to ha
 
 ## Build steps for iOS
 ----------------------
-1. Open `src/BanubaSdk/BanubaSdk.xcworkspace` in XCode.
+1. Open `src/BanubaSdk/BanubaSdkApp/BanubaSdkApp.xcodeproj` in XCode.
 2. Run BanubaSdkApp target
 
 ## Notes:
